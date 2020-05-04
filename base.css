@@ -17,7 +17,7 @@ main {
   	justify-content: center;
   	text-align: center;
   	flex-wrap: wrap;
-
+  	padding-bottom: 30px;
   	border: 15px solid rgb(150, 150, 150);
 }
 .title {
@@ -106,6 +106,7 @@ nav {
 	width: 60%;
 	background-color: rgba(0, 0, 0, 0.04);
 	border-radius: 10px;
+	font-size: 17px;
 }
 
 .content_item {
@@ -130,6 +131,12 @@ nav {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+    color: black;
+}
+.simpe_text {
+	margin-top: 10px;
+	margin-bottom: 10px;
+    background-color: rgb(200, 200, 200);
     color: black;
 }
 .content_item_text li {
