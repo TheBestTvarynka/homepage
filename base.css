@@ -67,7 +67,6 @@ nav {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	/*margin-right: 8px;*/
 	border-bottom: 2px solid white;
 }
 .social_item a {
@@ -80,21 +79,6 @@ nav {
 	background-color: rgb(100, 100, 100);
 }
 
-/*.topnav a {
-	color: white;
-	padding: 8px 10px;
-	font-size: 15px;
-	border-bottom: 2px solid black;
-}
-.topnav a:hover {
-	color: black;
-	border-bottom: 2px solid rgb(150, 150, 150);
-	background-color: rgb(200, 200, 200);
-}*/
-.topnav img {
-	height: 50px;
-}
-/*//////////////////////////////*/
 .content {
 	display: flex;
     flex-direction: row;
@@ -107,6 +91,22 @@ nav {
 .main_content {
 	width: 60%;
 	border: 5px solid #ff0000;
+}
+
+.intro {
+	color: black;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.intro p {
+	align-self: center;
+	width: 60%;
+	background-color: rgba(0, 0, 0, 0.04);
+	border-radius: 10px;
 }
 
 .addition_content {
