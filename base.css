@@ -85,12 +85,11 @@ nav {
   	justify-content: center;
   	text-align: center;
   	flex-wrap: wrap;
-  	border: 3px solid grey;
 }
 
 .main_content {
 	width: 60%;
-	border: 5px solid #ff0000;
+	padding-right: 10px;
 }
 
 .intro {
@@ -99,14 +98,42 @@ nav {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 20px;
+	padding-bottom: 15px;
 }
 .intro p {
 	align-self: center;
 	width: 60%;
 	background-color: rgba(0, 0, 0, 0.04);
 	border-radius: 10px;
+}
+
+.content_item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: left;
+}
+.collapsible {
+	background-color: black;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border: none;
+}
+.content_item_text {
+padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  color: black;
+}
+.content_item_text a {
+	color: black;
+	text-decoration: underline;
 }
 
 .addition_content {
