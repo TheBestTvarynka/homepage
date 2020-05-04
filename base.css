@@ -114,6 +114,7 @@ nav {
 	flex-direction: column;
 	flex-wrap: wrap;
 	text-align: left;
+	padding-top: 10px;
 }
 .collapsible {
 	background-color: black;
@@ -124,12 +125,15 @@ nav {
 	border: none;
 }
 .content_item_text {
-padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-  color: black;
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    color: black;
+}
+.content_item_text li {
+	padding-top: 5px;
 }
 .content_item_text a {
 	color: black;
