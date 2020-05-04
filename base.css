@@ -20,12 +20,10 @@ main {
 
   	border: 15px solid rgb(150, 150, 150);
 }
-
 .title {
 	background-color: #000000;
 	color: #ffffff;
 }
-/*//////////////////////////////*/
 .header_container {
 	display: flex;
 	flex-direction: row;
@@ -34,7 +32,6 @@ main {
 }
 .header_container img {
 	height: 150px;
-	transform: translateX(0px);
 }
 nav {
 	display: flex;
@@ -51,16 +48,41 @@ nav {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 
 	background-color: black;
 	font-size: 14px;
 	margin-top: 10px;
 	text-align: center;
 }
-.topnav a {
+.icon {
+	fill: currentColor;
+	height: 1.5rem;
+	vertical-align: text-bottom;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.social_item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	/*margin-right: 8px;*/
+	border-bottom: 2px solid white;
+}
+.social_item a {
 	color: white;
-	padding: 14px 16px;
+	padding: 8px 10px;
+	font-size: 15px;
+}
+.social_item:hover {
+	border-bottom: 2px solid rgb(50, 50, 50);
+	background-color: rgb(100, 100, 100);
+}
+
+/*.topnav a {
+	color: white;
+	padding: 8px 10px;
 	font-size: 15px;
 	border-bottom: 2px solid black;
 }
@@ -68,7 +90,7 @@ nav {
 	color: black;
 	border-bottom: 2px solid rgb(150, 150, 150);
 	background-color: rgb(200, 200, 200);
-}
+}*/
 .topnav img {
 	height: 50px;
 }
