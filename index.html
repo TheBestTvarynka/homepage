@@ -54,14 +54,22 @@
         </div>
         <div class="content">
           <div class="main_content">
-            <p>main content</p>
-            <p>erf reg reg reg </p>
-            <p>erf reg reg reg </p>
-            <p>erf reg reg reg </p>
-            <p>erf reg reg reg </p>
-            <p>erf reg reg reg </p>
-            <p>erf reg reg reg </p>
-            <p>erf reg reg reg </p>
+            <div class="content_item">
+              <button class="collapsible">EDUCATION</button>
+              <div class="content_item_text">
+                <ul>
+                  <li>2015 - 2018 studying in Volyn Scientific Boarding School of Volyn Regional Council</li>
+                  <li>2018 - 2022 studying in National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”</li>
+                  <li><a href="https://coursera.org/share/cd58e79deec6b380a7fb1670f8112d72">Cisco Networking</a></li>
+                  <li><a href="https://coursera.org/share/2cfb7904737c0c18045773a2b6826bd4">Programming Languages</a></li>
+                  <li><a href="https://coursera.org/share/8d99a69b1ac53e59a0661e47157ab527">Google Cloud Platform Fundamentals: Core Infrastructure</a></li>
+                  <li><a href="https://coursera.org/share/f6b958c1503e4502c4d7d69b4c6ebfb2">Networking in Google Cloud: Defining and Implementing Networks</a></li>
+                </ul>  
+              </div>
+            </div>
+            <div class="content_item"></div>
+            <div class="content_item"></div>
+            <div class="content_item"></div>
           </div>
           <div class="addition_content">
             <p>additional content</p>
@@ -72,5 +80,21 @@
           </div>
         </div>
     </main>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var c = this.nextElementSibling;
+          if (c.style.maxHeight){
+            c.style.maxHeight = null;
+          } else {
+            c.style.maxHeight = c.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
   </body>
 </html>
