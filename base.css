@@ -132,10 +132,10 @@ nav {
 	padding-bottom: 10px;
 	padding-left: 10px;
 	border: none;
+	border-radius: 5px 5px 0 0;
 }
 .content_item_text {
     padding-left: 30px;
-    padding-bottom: 15px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

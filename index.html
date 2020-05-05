@@ -50,7 +50,7 @@
         <div class="content">
           <div class="main_content">
             <div class="content_item">
-              <button class="collapsible">EDUCATION</button>
+              <button class="collapsible">&#9660 EDUCATION</button>
               <div class="content_item_text">
                 <ul>
                   <li>2015 - 2018 studying in Volyn Scientific Boarding School of Volyn Regional Council</li>
@@ -63,7 +63,7 @@
               </div>
             </div>
             <div class="content_item">
-              <button class="collapsible">ACHIEVEMENTS</button>
+              <button class="collapsible">&#9660 ACHIEVEMENTS</button>
               <div class="content_item_text">
                 <ul>
                   <li>2019 participating in Google HashCode19 (5th place in Kyiv)</li>
@@ -73,7 +73,7 @@
               </div>
             </div>
             <div class="content_item">
-              <button class="collapsible">EXPERIENCE</button>
+              <button class="collapsible">&#9660 EXPERIENCE</button>
               <div class="content_item_text">
                 <ul>
                   <li><a href="https://github.com/TheBestTvarynka/QStyleSheetString">QStyleSheetString</a></li>
@@ -84,7 +84,7 @@
               </div>
             </div>
             <div class="content_item">
-              <button class="collapsible">LANGUAGES</button>
+              <button class="collapsible">&#9660 LANGUAGES</button>
               <div class="content_item_text">
                 <ul>
                   <li>Ukraine (native)</li>
@@ -96,7 +96,7 @@
           </div>
           <div class="addition_content">
             <div class="content_item">
-              <button class="collapsible">SKILLS</button>
+              <button class="collapsible">&#9660 SKILLS</button>
               <div class="content_item_text">
                 <ul>
                   <li>Java</li>
@@ -111,7 +111,7 @@
               </div>
             </div>
             <div class="content_item">
-              <button class="collapsible">HOBBIES</button>
+              <button class="collapsible">&#9660 HOBBIES</button>
               <div class="content_item_text">
                 <ul>
                   <li>Football </li>
@@ -120,7 +120,7 @@
               </div>
             </div>
             <div class="content_item">
-              <button class="collapsible">CHARACTER</button>
+              <button class="collapsible">&#9660 CHARACTER</button>
               <div class="content_item_text">
                 <div class="tags">
                   <p>industrious</p>
@@ -141,16 +141,19 @@
       let coll = document.getElementsByClassName("collapsible");
       let i;
       for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        let btn = coll[i];
+        btn.addEventListener("click", function() {
           this.classList.toggle("active");
           let c = this.nextElementSibling;
           if (c.style.maxHeight){
             c.style.maxHeight = null;
+            btn.innerHTML = '&#9654' + btn.innerHTML.substr(1);
           } else {
             c.style.maxHeight = c.scrollHeight + "px";
+            btn.innerHTML = '&#9660' + btn.innerHTML.substr(1);
           }
         });
-        coll[i].click();
+        btn.click();
       }
     </script>
   </body>
