@@ -112,7 +112,7 @@ nav {
 .intro p {
 	align-self: center;
 	width: 60%;
-	background-color: rgba(0, 0, 0, 0.04);
+	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 	font-size: 17px;
 }
@@ -123,7 +123,7 @@ nav {
 	flex-direction: column;
 	flex-wrap: wrap;
 	text-align: left;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 .collapsible {
 	background-color: black;
@@ -134,18 +134,24 @@ nav {
 	border: none;
 }
 .content_item_text {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.1);
     color: black;
+    /*border: 2px solid grey;*/
+    border-radius: 0 0 5px 5px;
 }
 .simpe_text {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
     background-color: rgb(200, 200, 200);
     color: black;
+    border-radius: 5px;
 }
 .content_item_text li {
 	padding-top: 5px;
@@ -166,10 +172,9 @@ nav {
 	margin-bottom: 10px;
 	margin-left: 10px;
 	padding: 5px 5px 5px 5px;
-    background-color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
-
 
 .addition_content {
 	width: 30%;
