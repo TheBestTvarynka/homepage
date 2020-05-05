@@ -8,3 +8,5 @@ If you want to
 * improve this project then make a pull request or write to me on email;
 * report about a bug or other mistake then make an issue;
 * tell me something else then write to me on email;
+
+🧙Hocus-pocus!
