@@ -9,3 +9,4 @@ If you want to
 * report about a bug or other mistake then make an issue;
 * tell me something else then write to me on email;
 
+🧙Hocus-pocus!
