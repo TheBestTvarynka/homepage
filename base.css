@@ -17,13 +17,13 @@ body {
 
 main {
 	width: 80%;
-    display: flex;
-    flex-direction: column;
-  	justify-content: center;
-  	text-align: center;
-  	flex-wrap: wrap;
-  	padding-bottom: 30px;
-  	border: 15px solid rgb(150, 150, 150);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	padding-bottom: 30px;
+	border: 15px solid rgb(150, 150, 150);
 }
 
 .title {
@@ -98,10 +98,10 @@ nav {
 
 .content {
 	display: flex;
-    flex-direction: row;
-  	justify-content: center;
-  	text-align: center;
-  	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
 }
 
 .main_content {
@@ -148,13 +148,13 @@ nav {
 }
 
 .content_item_text {
-    padding-left: 30px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: black;
-    border-radius: 0 0 5px 5px;
+	padding-left: 30px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: black;
+	border-radius: 0 0 5px 5px;
 }
 
 .simpe_text {
@@ -162,9 +162,9 @@ nav {
 	margin-bottom: 10px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-    background-color: rgb(200, 200, 200);
-    color: black;
-    border-radius: 5px;
+	background-color: rgb(200, 200, 200);
+	color: black;
+	border-radius: 5px;
 }
 
 .content_item_text li {
@@ -188,10 +188,58 @@ nav {
 	margin-bottom: 10px;
 	margin-left: 10px;
 	padding: 5px 5px 5px 5px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
 }
 
 .addition_content {
 	width: 30%;
+}
+
+@media screen and (max-width: 875px) {
+	.social_item a {
+		font-size: 10px;
+	}
+	.name {
+		font-size: 30px;
+	}
+	.icon {
+		height: 1rem;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.intro p {
+		font-size: 13px;
+	}
+	.content_item_text {
+		font-size: 13px;
+	}
+	.simpe_text {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.content {
+		flex-direction: column;
+	}
+	.main_content {
+		width: 100%;
+	}
+	.addition_content {
+		width: 100%;
+	}
+	.intro p {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 384px) {
+	.header_container {
+		flex-direction: column;
+	}
+	.topnav {
+		flex-direction: column;
+	}
 }
