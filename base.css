@@ -110,6 +110,8 @@ nav {
 	padding-bottom: 15px;
 }
 .intro p {
+	padding-top: 10px;
+	padding-bottom: 10px;
 	align-self: center;
 	width: 60%;
 	background-color: rgba(0, 0, 0, 0.1);
