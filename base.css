@@ -25,19 +25,23 @@ main {
   	padding-bottom: 30px;
   	border: 15px solid rgb(150, 150, 150);
 }
+
 .title {
 	background-color: #000000;
 	color: #ffffff;
 }
+
 .header_container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
 }
+
 .header_container img {
 	height: 150px;
 }
+
 nav {
 	display: flex;
 	flex-direction: column;
@@ -46,20 +50,22 @@ nav {
 	margin: auto;
 	width: 100%;
 }
+
 .name {
 	font-size: 40px;
 }
+
 .topnav {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-
 	background-color: black;
 	font-size: 14px;
 	margin-top: 10px;
 	text-align: center;
 }
+
 .icon {
 	fill: currentColor;
 	height: 1.5rem;
@@ -67,6 +73,7 @@ nav {
 	padding-top: 5px;
 	padding-left: 5px;
 }
+
 .social_item {
 	display: flex;
 	flex-direction: row;
@@ -74,6 +81,7 @@ nav {
 	justify-content: center;
 	border-bottom: 2px solid white;
 }
+
 .social_item a {
 	color: white;
 	padding-bottom: 10px;
@@ -82,6 +90,7 @@ nav {
 	padding-top: 5px;
 	font-size: 15px;
 }
+
 .social_item:hover {
 	border-bottom: 2px solid rgb(50, 50, 50);
 	background-color: rgb(100, 100, 100);
@@ -127,6 +136,7 @@ nav {
 	text-align: left;
 	padding-top: 20px;
 }
+
 .collapsible {
 	background-color: black;
 	color: white;
@@ -136,6 +146,7 @@ nav {
 	border: none;
 	border-radius: 5px 5px 0 0;
 }
+
 .content_item_text {
     padding-left: 30px;
     max-height: 0;
@@ -143,9 +154,9 @@ nav {
     transition: max-height 0.2s ease-out;
     background-color: rgba(0, 0, 0, 0.1);
     color: black;
-    /*border: 2px solid grey;*/
     border-radius: 0 0 5px 5px;
 }
+
 .simpe_text {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -155,9 +166,11 @@ nav {
     color: black;
     border-radius: 5px;
 }
+
 .content_item_text li {
 	padding-top: 5px;
 }
+
 .content_item_text a {
 	color: black;
 	text-decoration: underline;
@@ -169,6 +182,7 @@ nav {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
 .tags p {
 	margin-top: 10px;
 	margin-bottom: 10px;
