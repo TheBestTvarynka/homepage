@@ -10,7 +10,7 @@ deploy:
     access_key_id: $ACCESS_KEY_ID
     secret_access_key: $SECRET_ACCESS_KEY
     bucket: "pavlomyroniuk.resume-staging"
-    region: eu-central-1
+    region: eu-west-3
     acl: public_read
     on:
       branch: develop
@@ -19,7 +19,7 @@ deploy:
     access_key_id: $ACCESS_KEY_ID
     secret_access_key: $SECRET_ACCESS_KEY
     bucket: "pavlomyroniuk.resume-production"
-    region: eu-central-1
+    region: eu-west-3
     acl: public_read
     on:
       branch: master
